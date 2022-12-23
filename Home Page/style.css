@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding-top: 1px;
+    box-sizing: border-box;
+}  
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: 'Flamenco', cursive;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+.main-nav{
+   float: right;
+   margin-right: 20px;
+}
+
+.main-nav li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.main-nav li a{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 6px 6px;
+    transition: .4s ease-in;
+}
+
+.main-nav li a.active,
+.main-nav li a:hover{
+    color:seagreen;
+}
+
+.main-nav li a:hover{
+    text-decoration: underline;
+}
+
+.anime{
+    color: white;
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+    height: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.slider{
+    color: tomato;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+}
+
+@keyframes slider{
+    0%{ margin-top: -200px; }
+    50%{ margin-top: 0px; }
+    100%{ margin-top: 200px; }
+}
+
+
+.content-header{
+    color: #fff;
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.content-header h1{
+    font-size: 40px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    animation: move 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move{
+    from{padding-left: 40px;}
+    to{padding-right: 40px;}
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: #fff;
+    color: black;
+    margin-right: 15px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.btn-full:hover{
+    background-color: seagreen;
+}
+
+.colorchange{
+    animation: colorchangecellularnetwork 3s infinite;
+}
+@keyframes colorchangecellularnetwork{
+    0%{color: gold;}
+    25%{color:lime}
+    50%{color: greenyellow}
+    100%{color: springgreen;}
+}
+
+.acknldgmnt
+{   padding: 40px 30px;
+    color:white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(https://images.idgesg.net/images/article/2017/10/wireless_network_internet_of_things_iot_thinkstock_853701554-100739367-large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.text{
+    text-align: center;
+    text-decoration: underline;
+    color: crimson;
+}
+
+.exp
+{   padding: 40px 30px; 
+    color: whitesmoke;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(http://getwallpapers.com/wallpaper/full/4/a/a/385430.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.textt{
+    padding-top: 100px;
+    text-align: center;
+    text-decoration: underline;
+    color: gold;
+}
+
+/*----introduction---*/
+#introduction{
+    padding: 100px 20px;
+}
+
+.text-intro{
+    color: darkblue;
+}
+
+.intro-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro-right-col{
+    flex-basis: 3%;
+}
+
+.intro-right-col img{
+    width: 500px;
+    padding-left: 5px;
+}
+
+.intro-left-col{
+    flex-basis: 50%;
+}
+
+.intro-text{
+    max-width: 1000px;
+}
+
+/*----characteristics---*/
+#characteristics{
+    padding: 30px 20px;
+    background-color: wheat;
+}
+
+.text-chrctr{
+    color: darkblue;
+}
+
+.chrctr-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chrctr-right-col{
+    flex-basis: 3%;
+}
+
+.chrctr-right-col img{
+    width: 100%;
+}
+
+.chrctr-left-col{
+    flex-basis: 60%;
+}
+
+.chrctr-text{
+    max-width: 1000px;
+}
+
+.chrctr-h1,
+.chrctr-h2,
+.chrctr-h3,
+.chrctr-h4,
+.chrctr-h5,
+.chrctr-h6
+{
+    text-decoration: underline;
+}
+
+/*----working-principle---*/
+#working-principle{
+    padding: 50px 20px;
+    background-color: lightgoldenrodyellow;
+}
+
+.text-wrkngprncple{
+    color: darkblue;
+}
+
+.wrkngprncple-h1,
+.wrkngprncple-h2,
+.wrkngprncple-h3,
+.wrkngprncple-h4,
+.wrkngprncple-h5,
+.wrkngprncple-h6,
+.wrkngprncple-h7,
+.wrkngprncple-h8,
+.wrkngprncple-h9,
+.wrkngprncple-h10,
+.wrkngprncple-h11,
+.wrkngprncple-h12,
+.wrkngprncple-h13
+{
+    text-decoration: underline;
+}
+
+.img1-wrkngprncple{
+    width: 30%;
+    height: 30%;
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+.img2-wrkngprncple{
+   padding-top: 20px;
+   padding-left: 120px;
+}
+
+.img3-wrkngprncple{
+    float: right;
+}
+
+.textt-wrkngprncple{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}  
+
+.textt-wrkngprncple .img2-wrkngprncple{
+    float: right;
+    margin-bottom: 10px;
+}
+
+.texttt-wrkngprncple .img3-wrkngprncple{
+    float: right;
+}
+
+/*----architecture---*/
+#architecture{
+    padding: 50px 20px;
+    background-color: lightgray;
+}
+
+.architecture{
+    color: darkblue;
+}
+
+.architecture-text{
+    color: black;
+}
+
+.img-architecture{
+    padding-left: 250px;
+}
+
+.architecture-h1,
+.architecture-h2,
+.architecture-h3,
+.architecture-h4,
+.architecture-h5,
+.architecture-h6,
+.architecture-h7,
+.architecture-h8,
+.architecture-h9
+{
+    text-decoration: underline;
+}
+
+.img2-architecture{
+    float: right;
+    padding-top: 50px;
+    padding-right: 200px;
+}
+
+.descript-textt{
+    margin-top: 30px;
+}
+
+.img3-architecture{
+    float: right;
+    padding-right: 100px;
+}
+
+/*----future-scope---*/
+#future-scope{
+    padding: 50px 20px;
+    background-color: whitesmoke;
+}
+
+.text-fscope{
+    color: darkblue;
+}
